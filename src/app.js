@@ -16,10 +16,10 @@ app.use(cookieParser());
 // Middlewares
 // app.use(require('./middlewares/basicAuth'));
 
-const tempRouter = require('./routes/temp');
+const requestHandlingRouter = require('./routes/requestHandling');
 
 // Listeners
-app.use(tempRouter);
+app.use(requestHandlingRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
